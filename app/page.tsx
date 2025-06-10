@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <header className="bg-gradient-to-r from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black text-white py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold">File Naming Done Right</h1>
+            <h1 className="text-4xl md:text-5xl font-bold">Your file name is wrong</h1>
             <a
               href="https://github.com/steebchen/yourfilenameiswrong.com"
               target="_blank"
@@ -35,7 +35,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-xl md:text-2xl opacity-90 max-w-2xl">
-            Let's normalize file extensions how they should be used, not how they're often misused.
+            Let's normalize file extensions the way they should be used, not the way they're often <span className="underline">misused</span>.
           </p>
         </div>
       </header>
@@ -50,7 +50,7 @@ export default function Home() {
             <code className="bg-muted px-2 py-1 rounded ml-1">development.env</code>.
           </p>
           <p className="text-lg text-muted-foreground">
-            .env, dockerfile and others are actually file extensions, and it's a mystery why people start to suffix the
+            .env, .dockerfile and others are actually file extensions, and it's a mystery why people start to suffix the
             file type and this page is trying to change this.
           </p>
           <p className="text-lg text-muted-foreground">

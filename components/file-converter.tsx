@@ -47,10 +47,13 @@ export function FileConverter() {
   }
 
   return (
-    <div className="bg-card border rounded-lg p-6">
-      <div className="flex flex-col md:flex-row gap-4 mb-6">
+    <div className="bg-black rounded-lg p-6">
+      <form onSubmit={e => {
+        e.preventDefault()
+        handleConvert()
+      }} className="flex flex-col md:flex-row gap-4">
         <div className="flex-1">
-          <label htmlFor="filename" className="block text-sm font-medium text-foreground mb-1">
+          <label htmlFor="filename" className="block font-medium text-background mb-2 text-lg">
             Enter incorrectly named file:
           </label>
           <Input
@@ -61,22 +64,22 @@ export function FileConverter() {
           />
         </div>
         <div className="flex items-end">
-          <Button onClick={handleConvert} className="w-full md:w-auto">
+          <Button type="submit" className="w-full md:w-auto bg-white text-black hover:bg-white ">
             Convert <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
-      </div>
+      </form>
 
       {error && (
-        <div className="p-4 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900 rounded-md text-red-700 dark:text-red-400 mb-4">
+        <div className="mt-6 p-4 bg-red-950/30 border border-red-400 rounded-md text-red-400 mb-4">
           {error}
         </div>
       )}
 
       {convertedName && (
-        <div className="p-4 bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-900 rounded-md">
-          <p className="text-sm text-muted-foreground mb-1">Properly named file:</p>
-          <p className="font-mono text-lg font-medium text-green-700 dark:text-green-400">{convertedName}</p>
+        <div className="mt-6 p-4 bg-green-950/30 border border-green-900 rounded-md">
+          <p className="text-sm text-background mb-1">Properly named file:</p>
+          <p className="font-mono text-lg font-medium text-green-400">{convertedName}</p>
         </div>
       )}
     </div>

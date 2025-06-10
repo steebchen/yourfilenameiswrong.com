@@ -24,6 +24,9 @@ export default function Home() {
             <code className="bg-muted px-2 py-1 rounded ml-1">development.env</code>.
           </p>
           <p className="text-lg text-muted-foreground">
+            .env, dockerfile and others are actually file extensions, and it's a mystery why people start to suffix the file type and this page is trying to change this.
+          </p>
+          <p className="text-lg text-muted-foreground">
             This creates confusion and inconsistency in codebases. Let's explore why the proper convention matters and
             how to fix it.
           </p>

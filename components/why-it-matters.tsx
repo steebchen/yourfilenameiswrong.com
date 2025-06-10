@@ -10,7 +10,7 @@ export function WhyItMatters() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center">
-              <FileCode className="mr-2 h-5 w-5" /> Consistency
+              <FileCode className="mr-3 size-6" /> Consistency
             </CardTitle>
             <CardDescription>Maintaining a logical pattern</CardDescription>
           </CardHeader>
@@ -25,7 +25,7 @@ export function WhyItMatters() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center">
-              <Filter className="mr-2 h-5 w-5" /> Filtering & Sorting
+              <Filter className="mr-3 size-6" /> Filtering & Sorting
             </CardTitle>
             <CardDescription>Better organization in file explorers</CardDescription>
           </CardHeader>
@@ -40,7 +40,7 @@ export function WhyItMatters() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center">
-              <Terminal className="mr-2 h-5 w-5" /> Command Line Efficiency
+              <Terminal className="mr-3 size-6" /> Command Line Efficiency
             </CardTitle>
             <CardDescription>Easier to work with in the terminal</CardDescription>
           </CardHeader>
@@ -55,7 +55,7 @@ export function WhyItMatters() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center">
-              <GitBranch className="mr-2 h-5 w-5" /> Tool Integration
+              <GitBranch className="mr-3 size-6" /> Tool Integration
             </CardTitle>
             <CardDescription>Better compatibility with development tools</CardDescription>
           </CardHeader>

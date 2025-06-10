@@ -36,11 +36,6 @@ export function ComparisonTable() {
               <TableCell className="font-mono">node.gitignore</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell className="font-medium">Editor Configuration</TableCell>
-              <TableCell className="font-mono">.editorconfig.js</TableCell>
-              <TableCell className="font-mono">js.editorconfig</TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell className="font-medium">Shell Scripts</TableCell>
               <TableCell className="font-mono">setup.sh.macos</TableCell>
               <TableCell className="font-mono">macos.setup.sh</TableCell>
